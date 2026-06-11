@@ -1,0 +1,11 @@
+services:
+  dev:
+    build:
+      context: .
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    environment:
+#      CARGO_HOME: /workspace/.cache/cargo
+#      RUSTUP_HOME: /workspace/.cache/rustup
+      npm_config_cache: /workspace/.cache/npm

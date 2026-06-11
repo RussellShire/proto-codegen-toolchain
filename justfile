@@ -1,0 +1,29 @@
+set dotenv-load := false
+
+compose := "docker compose"
+
+default:
+    @just --list
+
+build-image:
+    {{compose}} build
+
+shell:
+    {{compose}} run --rm dev bash
+
+proto-generate:
+    {{compose}} run --rm dev just _proto-generate
+
+test:
+    {{compose}} run --rm dev just _test
+
+ci:
+    {{compose}} run --rm dev just _ci
+
+_proto-generate:
+    @echo "proto generation not wired yet"
+
+_test:
+    @echo "tests not wired yet"
+
+_ci: _proto-generate _test
