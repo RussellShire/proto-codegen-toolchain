@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package article.v1;
+
+import "common/v1/field_value.proto";
+
+message Article {
+  string id = 1;
+  ArticleStatus status = 2;
+  repeated string tags = 3;
+  common.v1.FieldValue title = 4;
+  common.v1.FieldValue subtitle = 5;
+  common.v1.FieldValue is_featured = 6;
+  common.v1.FieldValue priority = 7;
+}
+
+message ArticlePatch {
+  string id = 1;
+  common.v1.FieldSet fields = 2;
+}
+
+enum ArticleStatus {
+  ARTICLE_STATUS_UNSPECIFIED = 0;
+  ARTICLE_STATUS_DRAFT = 1;
+  ARTICLE_STATUS_PUBLISHED = 2;
+  ARTICLE_STATUS_ARCHIVED = 3;
+}
