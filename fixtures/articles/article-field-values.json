@@ -1,0 +1,77 @@
+{
+  "article": {
+    "id": "article-1",
+    "status": "ARTICLE_STATUS_DRAFT",
+    "tags": ["spike", "protobuf"],
+    "title": {
+      "state": {
+        "case": "value",
+        "value": {
+          "kind": {
+            "case": "string_value",
+            "stringValue": "Protobuf parity spike"
+          }
+        }
+      }
+    },
+    "subtitle": {
+      "state": {
+        "case": "null"
+      }
+    },
+    "isFeatured": {
+      "state": {
+        "case": "value",
+        "value": {
+          "kind": {
+            "case": "bool_value",
+            "boolValue": false
+          }
+        }
+      }
+    },
+    "priority": {
+      "state": {
+        "case": "value",
+        "value": {
+          "kind": {
+            "case": "int32_value",
+            "int32Value": 0
+          }
+        }
+      }
+    }
+  },
+  "patch": {
+    "id": "article-1",
+    "fields": {
+      "title": {
+        "state": {
+          "case": "value",
+          "value": {
+            "kind": {
+              "case": "string_value",
+              "stringValue": ""
+            }
+          }
+        }
+      },
+      "subtitle": {
+        "state": {
+          "case": "unset"
+        }
+      },
+      "is_featured": {
+        "state": {
+          "case": "value",
+          "value": {
+            "kind": {
+              "case": "bool_value",
+              "boolValue": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
