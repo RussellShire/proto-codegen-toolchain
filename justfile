@@ -21,7 +21,8 @@ ci:
     {{compose}} run --rm dev just _ci
 
 _proto-generate:
-    @echo "proto generation not wired yet"
+    npm install
+    npm run proto:generate
 
 _test:
     @echo "tests not wired yet"

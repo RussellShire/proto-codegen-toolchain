@@ -1,0 +1,5 @@
+.env*
+typescript/src/generated
+node_modules
+.cache/npm
+.idea
