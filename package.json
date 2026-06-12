@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "proto:generate": "mkdir -p typescript/src/generated && protoc -I proto -I /usr/include --plugin=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=typescript/src/generated --ts_proto_opt=esModuleInterop=true,forceLong=string,oneof=unions,useOptionals=messages,importSuffix=.js proto/common/v1/field_value.proto proto/article/v1/article.proto",
-    "test": "vitest run"
+    "test": "vitest run --passWithNoTests"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

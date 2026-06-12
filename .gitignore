@@ -1,5 +1,13 @@
-.env*
+#Typescript
 typescript/src/generated
+
+# Rust
+/target/
+
+#Node
 node_modules
+
+#Local
 .cache/npm
 .idea
+.env*

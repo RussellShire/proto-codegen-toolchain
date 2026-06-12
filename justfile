@@ -25,6 +25,7 @@ _proto-generate:
     npm run proto:generate
 
 _test:
-    @echo "tests not wired yet"
+    cargo test
+    npm test
 
 _ci: _proto-generate _test
